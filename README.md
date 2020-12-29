@@ -19,4 +19,4 @@ This method should be PUBLIC and STATIC so you just call the Database class's na
 
 Warning: If two threads are making the test " if(singleObject == null) " at the same time, and no Database object exists yet,
 they both can get past it, which means both threads will create a Database object.
-Use synchronized keyword,which you can use to restrict access to getInstance to one thread at a time.(SEE DESIGN-PATTERN-SINGLETON-THREADED)
+Use synchronized keyword,which you can use to restrict access to getInstance to one thread at a time.(SEE DESIGN-PATTERN-SINGLETON-SYNCHRONIZED)
